@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<body>
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://d3js.org/topojson.v1.min.js"></script>
+  <!-- I recommend you host this file on your own, since this will change without warning -->
+  <script src="http://datamaps.github.io/scripts/datamaps.world.min.js?v=1"></script>
+  <h2>Datamaps Playground</h2>
+  <p><a href="http://datamaps.github.io/">DataMaps Project Homepage</a></p>
+  <div id="container1" style="position: relative; width: 80%; max-height: 450px;"></div>
+ 
+     
+     <script>
+       //basic map config with custom fills, mercator projection
+      var map = new Datamap({
+        scope: 'world',
+        element: document.getElementById('container1'),
+        projection: 'mercator',
+        height: 640,
+        fills: {
+          defaultFill: '#C0C1C2',
+          lt50: '#145B96',
+          gt50: '#0079E1',
+          st50: '#005B98',
+          at50: '#0E8C8C',
+          su50: '#0081A5',
+          it50: '#1581A3',
+          na50: '#4A1672'
+          
+          
+        },
+        
+        data: {
+          IRL: {fillKey: 'lt50' },
+          IMN: {fillKey: 'lt50' },
+          GBR: {fillKey: 'lt50' },
+          BEL: {fillKey: 'gt50' },
+          FRA: {fillKey: 'gt50' },
+          DEU: {fillKey: 'gt50' },
+          GGY: {fillKey: 'gt50' },
+          JEY: {fillKey: 'gt50' },
+          LIE: {fillKey: 'gt50' },
+          LUX: {fillKey: 'gt50' },
+          MCO: {fillKey: 'gt50' },
+          NLD: {fillKey: 'gt50' },
+          CHE: {fillKey: 'gt50' },
+          ALA: {fillKey: 'st50' },
+          ALB: {fillKey: 'su50' },
+          AND: {fillKey: 'it50' },
+          AUT: {fillKey: 'at50' },
+          BLR: {fillKey: 'st50' },
+          BIH: {fillKey: 'su50' },
+          BGR: {fillKey: 'st50' },
+          HRV: {fillKey: 'su50' },
+          CZE: {fillKey: 'at50' },
+          DNK: {fillKey: 'st50' },
+          EST: {fillKey: 'st50' },
+          FRO: {fillKey: 'st50' },
+          FIN: {fillKey: 'st50' },
+          GIB: {fillKey: 'it50' },
+          GRC: {fillKey: 'su50' },
+          VAT: {fillKey: 'su50' },
+          HUN: {fillKey: 'at50' },
+          ISL: {fillKey: 'st50' },
+          ITA: {fillKey: 'su50' },
+          LVA: {fillKey: 'st50' },
+          LTU: {fillKey: 'st50' },
+          MKD: {fillKey: 'su50' },
+          MLT: {fillKey: 'su50' },
+          MDA: {fillKey: 'st50' },
+          MNE: {fillKey: 'su50' },
+          NOR: {fillKey: 'st50' },
+          POL: {fillKey: 'at50' },
+          PRT: {fillKey: 'it50' },
+          ROU: {fillKey: 'st50' },
+          RUS: {fillKey: 'st50' },
+          SMR: {fillKey: 'su50' },
+          SRB: {fillKey: 'su50' },
+          SVK: {fillKey: 'at50' },
+          SVN: {fillKey: 'st50' },
+          ESP: {fillKey: 'it50' },
+          SJM: {fillKey: 'st50' },
+          SWE: {fillKey: 'st50' },
+          UKR: {fillKey: 'st50' },
+          DZA: {fillKey: 'na50' },
+          EGY: {fillKey: 'na50' },
+          LBY: {fillKey: 'na50' },
+          MAR: {fillKey: 'na50' },
+          SDN: {fillKey: 'na50' },
+          TUN: {fillKey: 'na50' },
+          ESH: {fillKey: 'na50' }
+          
+                
+        }
+      });
+     </script>
+</body>
