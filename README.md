@@ -8,7 +8,7 @@ This repo is dedicated to studying and practicing the basics of D3.js. In order 
 
 Tutorial for learning D3.js 
 
-link: 
+link: [AlignedLeft](http://alignedleft.com/tutorials)
 
 ### DataMap_testcase
 
@@ -22,9 +22,14 @@ Basics for creating maps using 23andMe ancestry composition data
 
 
 
-## Built With
+## Built With / Resources
 
 * [D3.js](https://d3js.org/)
+* [Bostock Cloropleth](https://bl.ocks.org/mbostock/4060606)
+* [World Travel Map](http://davewood.me/blog/2014/04/09/drawing-a-world-map-with-d3/)
+* [Bostock Merging States Map](https://bl.ocks.org/mbostock/5416405)
+* [Patterson Cylindrical Projection in D3.js](https://bl.ocks.org/mbostock/d4021aa4dccfd65edffd)
+* [datamap library](http://datamaps.github.io/)
 
 ## Authors
 
